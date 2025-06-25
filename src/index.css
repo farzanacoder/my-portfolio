@@ -1,1 +1,23 @@
 @import "tailwindcss";
+
+@theme {
+  /* width here */
+ 
+
+
+  /* color here*/
+  --color-drk: #081421;
+  --color-light: #dfe4ea;
+
+
+
+  /* font family here*/
+  --font-poppins: "Poppins", sans-serif;
+  
+}
+
+body {
+  @apply font-poppins;
+}
+
+
