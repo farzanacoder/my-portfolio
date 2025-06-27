@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Button = ({btnTxt,className}) => {
+const Button = ({btnTxt,className,href}) => {
   return (
-    <button className={`py-4 px-10 rounded-4xl hover:bg-light hover:text-drk cursor-pointer duration-500 bg-black text-light ${className}`}>{btnTxt}</button>
+    <button href={href} className={`py-4 px-10 border border-drk rounded-4xl hover:bg-transparent hover:text-drk cursor-pointer duration-500 bg-black text-light ${className}`}>{btnTxt}</button>
   )
 }
 

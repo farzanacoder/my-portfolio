@@ -19,7 +19,8 @@ const Navber = () => {
 
    <>
     {/* mobile menu here */}
-    <nav className='relative h-full bg-light sm:hidden md:hidden lg:hidden py-4 '>
+    <header className='fixed top-0 left-0 w-full shadow z-50'>
+      <nav className='relative h-full bg-light sm:hidden md:hidden lg:hidden py-4 '>
         <Flex className='px-4 justify-between items-center '>
         <a href="index.html" target="_blank" rel="noopener noreferrer" className="text-2xl font-bold text-black italic" >Farjana</a>
         <div onClick={handleClick} className="cursor-pointer">
@@ -51,7 +52,7 @@ const Navber = () => {
         </Flex>
         <Flex className='flex items-center gap-x-2'>
           <FaRegAddressCard className='text-sm' />
-          <List text='Portfolio' />
+          <List text='Project' />
         </Flex>
         <Flex className='flex items-center gap-x-2'>
           <TbMessageCircleUser className='text-sm' />
@@ -62,11 +63,12 @@ const Navber = () => {
      }
 
     </nav>
+    </header>
 
 
     {/* desktop menu here */}
 
-     <nav className='hidden xl:block lg:block md:block sm:block bg-light py-5 '>
+     <nav className='fixed top-0 left-0 w-full shadow z-50 hidden xl:block lg:block md:block sm:block bg-light py-5 '>
         <Container>
             <Flex>
               <div className='w-5/12'>
@@ -78,7 +80,7 @@ const Navber = () => {
               <List text='About'/>
               <List text='Skills'/>
               <List text='Services'/>
-              <List text='Portfolio'/>
+              <List text='Project'/>
               <List text='Contact'/>
                 </Flex>                
                 </div>
