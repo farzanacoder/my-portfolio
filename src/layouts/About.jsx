@@ -4,7 +4,7 @@ import Heading from "../components/Heading";
 import SubHeading from "../components/SubHeading";
 import Flex from "../components/Flex";
 import Container from "../components/Container";
-import Paratext from "../components/paratext";
+import Paratext from "../components/Paratext";
 import CV from "../assets/Resume (FARJANA AKTER).pdf";
 import { PiReadCvLogoFill } from "react-icons/pi";
 
