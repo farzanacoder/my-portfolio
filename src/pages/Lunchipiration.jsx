@@ -5,7 +5,7 @@ import Heading from '../components/Heading'
 import Button from '../components/Button'
 import Flex from '../components/Flex'
 import Image from '../components/Image'
-import lunchipiration from '../assets/inspiration.png'
+import lunchipiration from '../assets/inspiration.PNG'
 import BtnLi from '../components/btnLi'
 import { Link } from 'react-router-dom'
 
