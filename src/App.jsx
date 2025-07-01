@@ -1,22 +1,34 @@
 import React from 'react'
-import Home from './layouts/Home'
-import About from './layouts/About'
-import Navber from './layouts/Navber'
-import Skills from './layouts/Skills'
-import Services from './layouts/Services'
-import Contact from './layouts/Contact'
-import Project from './layouts/Project'
+import {
+  createRoutesFromElements,
+  createBrowserRouter,
+  Route,
+  RouterProvider,
+} from "react-router-dom";
+import Home from './pages/Home';
+import Orebi from './pages/Orebi';
+import RootLayout from './layouts/RootLayout';
+import Lunchipiration from './pages/Lunchipiration';
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+   <>
+   <Route path="/" element={<RootLayout />}>
+     <Route path="/" element={<Home />}></Route>
+    <Route path="/orebi" element={<Orebi />}></Route>
+    <Route path="/lunchipiration" element={<Lunchipiration />}></Route>
+   </Route>
+   </>
+  )
+);
+
+
 
 const App = () => {
   return (
     <div>
-      <Navber/>
-      <Home/>
-      <About/>
-      <Skills/>
-      <Services/>
-      <Project/>
-      <Contact/>
+         <RouterProvider router={router} />
+
     </div>
   )
 }

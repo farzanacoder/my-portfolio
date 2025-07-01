@@ -17,77 +17,77 @@ const Navber = () => {
   }
   return (
 
-   <>
-    {/* mobile menu here */}
-    <header className='fixed top-0 left-0 w-full shadow z-50'>
-      <nav className='relative h-full bg-light sm:hidden md:hidden lg:hidden py-4 '>
-        <Flex className='px-4 justify-between items-center '>
-        <a href="index.html" target="_blank" rel="noopener noreferrer" className="text-2xl font-bold text-black italic" >Farjana</a>
-        <div onClick={handleClick} className="cursor-pointer">
+    <>
+      {/* mobile menu here */}
+      <header className=' top-0 left-0 w-full shadow z-10'>
+        <nav className='relative h-full bg-light sm:hidden md:hidden lg:hidden py-4 '>
+          <Flex className='px-4 justify-between items-center '>
+            <a href="index.html" target="_blank" rel="noopener noreferrer" className="text-2xl font-bold text-black italic" >Farjana</a>
+            <div onClick={handleClick} className="cursor-pointer">
+              {
+                click ? <RxCross2 /> : <HiOutlineBars3 />
+              }
+            </div>
+          </Flex>
+
           {
-            click ? <RxCross2 /> : <HiOutlineBars3 />
+            click &&
+            <>
+              <ul className='absolute top-16 left-0 bg-light w-full flex flex-col items-center justify-center gap-y-5 py-4'>
+                <Flex className='items-center gap-x-2'>
+                  <AiOutlineHome className='text-sm' />
+                  <List text='Home' />
+                </Flex>
+                <Flex className='flex items-center gap-x-2'>
+                  <FaRegUser className='text-sm' />
+                  <List text='About' />
+                </Flex>
+                <Flex className='flex items-center gap-x-2'>
+                  <FaRegFileAlt className='text-sm' />
+                  <List text='Skills' />
+                </Flex>
+                <Flex className='flex items-center gap-x-2'>
+                  <IoBriefcaseOutline className='text-sm' />
+                  <List text='Services' />
+                </Flex>
+                <Flex className='flex items-center gap-x-2'>
+                  <FaRegAddressCard className='text-sm' />
+                  <List text='Project' />
+                </Flex>
+                <Flex className='flex items-center gap-x-2'>
+                  <TbMessageCircleUser className='text-sm' />
+                  <List text='Contact' />
+                </Flex>
+              </ul>
+            </>
           }
-        </div>
-      </Flex>
 
-     {
-      click && 
-      <>
-       <ul className='absolute top-0 left-0 w-full flex flex-col items-center justify-center gap-y-5 py-4'>
-        <Flex className='items-center gap-x-2'>
-          <AiOutlineHome className='text-sm' />
-          <List text='Home' />
-        </Flex>
-        <Flex className='flex items-center gap-x-2'>
-          <FaRegUser className='text-sm' />
-          <List text='About' />
-        </Flex>
-        <Flex className='flex items-center gap-x-2'>
-          <FaRegFileAlt className='text-sm' />
-          <List text='Skills' />
-        </Flex>
-        <Flex className='flex items-center gap-x-2'>
-          <IoBriefcaseOutline className='text-sm' />
-          <List text='Services' />
-        </Flex>
-        <Flex className='flex items-center gap-x-2'>
-          <FaRegAddressCard className='text-sm' />
-          <List text='Project' />
-        </Flex>
-        <Flex className='flex items-center gap-x-2'>
-          <TbMessageCircleUser className='text-sm' />
-          <List text='Contact' />
-        </Flex>
-      </ul>
-      </>
-     }
-
-    </nav>
-    </header>
+        </nav>
+      </header>
 
 
-    {/* desktop menu here */}
+      {/* desktop menu here */}
 
-     <nav className='fixed top-0 left-0 w-full shadow z-50 hidden xl:block lg:block md:block sm:block bg-light py-5 '>
+      <nav className=' z-10 w-full shadow  hidden xl:block lg:block md:block sm:block bg-light py-5 '>
         <Container>
-            <Flex>
-              <div className='w-5/12'>
-        <a href="index.html" target="_blank" rel="noopener noreferrer" className="text-2xl font-bold text-black italic" >Farjana</a>
-              </div>
-                <div className='w-7/12'>
-                <Flex className='gap-x-8 xl:gap-x-10 items-center'>
-              <List text='Home'/>
-              <List text='About'/>
-              <List text='Skills'/>
-              <List text='Services'/>
-              <List text='Project'/>
-              <List text='Contact'/>
-                </Flex>                
-                </div>
-            </Flex>
+          <Flex>
+            <div className='w-5/12'>
+              <a href="index.html" target="_blank" rel="noopener noreferrer" className="text-2xl font-bold text-black italic" >Farjana</a>
+            </div>
+            <div className='w-7/12'>
+              <Flex className='gap-x-8 xl:gap-x-10 items-center'>
+                <List text='Home' />
+                <List text='About' />
+                <List text='Skills' />
+                <List text='Services' />
+                <List text='Project' />
+                <List text='Contact' />
+              </Flex>
+            </div>
+          </Flex>
         </Container>
-    </nav>
-   </>
+      </nav>
+    </>
 
 
 

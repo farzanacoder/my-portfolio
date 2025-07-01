@@ -1,167 +1,60 @@
 import React from 'react'
 import Container from '../components/Container'
-import Flex from '../components/Flex'
 import Heading from '../components/Heading'
 import SubHeading from '../components/SubHeading'
-import { RiVerifiedBadgeFill } from 'react-icons/ri'
+import SkillsBox from '../components/SkillsBox'
+import Flex from '../components/Flex'
 
 const Skills = () => {
   return (
     <section id='skills' className='bg-light'>
       <Container>
         <div className='py-20'>
-          <Heading text='Skills' />
-          <SubHeading className='' text='My technical level' />
+          <Heading className='lg:text-4xl text-[23px]' text='Skills' />
+          <SubHeading className='!text-sm lg:!text-xl' text='My technical level' />
         </div>
 
-        <div className='flex gap-x-10 ml-40'>
-          <Flex className='pb-20'>
-            <div className=' bg-white rounded-xl'>
-              <div className="bg-white rounded-2xl shadow-xl p-8 px-16">
-                <h3 className="text-center text-2xl font-semibold text-black mb-8">
+        <Flex className='pb-20 flex-col md:flex-row md:mx-7 md:gap-4 lg:flex-row gap-y-10 lg:mx-0 mx-7  ml-7 lg:ml-0 justify-evenly'>
+              <div className="bg-white rounded-2xl shadow-xl p-8 px-10 w-full md:w-1/2">
+                <h3 className="text-center text-xl lg:text-2xl font-semibold text-black mb-8">
                   Frontend developer
                 </h3>
-
-                <div className="grid grid-cols-2 gap-y-6 gap-x-6">
-                  <Flex>
-                    <RiVerifiedBadgeFill className='mr-5 mt-1' />
-                    <div>
-                      <p className="font-bold text-black flex items-center gap-2">
-                        HTML
-                      </p>
-                      <p className="text-sm text-gray-500">Experienced</p>
-                    </div>
-                  </Flex>
-
-                  <Flex>
-                    <RiVerifiedBadgeFill className='mr-5 mt-1' />
-                    <div>
-                      <p className="font-bold text-black flex items-center gap-2">
-                        CSS
-                      </p>
-                      <p className="text-sm text-gray-500">Experienced</p>
-                    </div>
-                  </Flex>
-
-                  <Flex>
-                    <RiVerifiedBadgeFill className='mr-5 mt-1' />
-                    <div>
-                      <p className="font-bold text-black flex items-center gap-2">
-                        Bootstrap
-                      </p>
-                      <p className="text-sm text-gray-500">Experienced</p>
-                    </div>
-                  </Flex>
-
-                  <Flex>
-                    <RiVerifiedBadgeFill className='mr-5 mt-1' />
-                    <div>
-                      <p className="font-bold text-black flex items-center gap-2">
-                        Tailwind
-                      </p>
-                      <p className="text-sm text-gray-500">Experienced</p>
-                    </div>
-                  </Flex>
-
-                  <Flex>
-                    <RiVerifiedBadgeFill className='mr-5 mt-1' />
-                    <div>
-                      <p className="font-bold text-black flex items-center gap-2">
-                        Javascript
-                      </p>
-                      <p className="text-sm text-gray-500">Basic</p>
-                    </div>
-                  </Flex>
-
-                  <Flex>
-                    <RiVerifiedBadgeFill className='mr-5 mt-1' />
-                    <div>
-                      <p className="font-bold text-black flex items-center gap-2">
-                        React
-                      </p>
-                      <p className="text-sm text-gray-500">Intermediate</p>
-                    </div>
-                  </Flex>
+                <Flex className=" flex-wrap flex-col md:flex-row md:gap-x-24  lg:flex-row lg:gap-x-24 items-center">
+                <div>
+                  <SkillsBox text='HTML' P_text='Experienced' />
+                <SkillsBox text='Bootstrap' P_text='Experienced' />
+                <SkillsBox text='Javascript' P_text='Intermediate' />
                 </div>
-
+                <div>
+                  <SkillsBox text='CSS' P_text='Experienced' />
+                <SkillsBox text='Tailwind' P_text='Experienced' />
+                <SkillsBox text='React' P_text='Experienced' />
+                </div>
+                </Flex>
               </div>
-            </div>
-          </Flex>
 
 
-          <Flex className='pb-20'>
-            <div className=' bg-white rounded-xl '>
-              <div className="bg-white rounded-2xl shadow-xl p-8 px-16">
-                <h3 className="text-center text-2xl font-semibold text-black mb-8">
-                  Frontend developer
+              <div className="bg-white rounded-2xl shadow-xl p-8 px-10 w-full md:w-1/2">
+                <h3 className="text-center text-xl lg:text-2xl font-semibold text-black mb-8">
+                  Tools & Platforms
                 </h3>
-
-                <div className="grid grid-cols-2 gap-y-6 gap-x-6">
-                  <Flex>
-                    <RiVerifiedBadgeFill className='mr-5 mt-1' />
-                    <div>
-                      <p className="font-bold text-black flex items-center gap-2">
-                        HTML
-                      </p>
-                      <p className="text-sm text-gray-500">Experienced</p>
-                    </div>
-                  </Flex>
-
-                  <Flex>
-                    <RiVerifiedBadgeFill className='mr-5 mt-1' />
-                    <div>
-                      <p className="font-bold text-black flex items-center gap-2">
-                        CSS
-                      </p>
-                      <p className="text-sm text-gray-500">Experienced</p>
-                    </div>
-                  </Flex>
-
-                  <Flex>
-                    <RiVerifiedBadgeFill className='mr-5 mt-1' />
-                    <div>
-                      <p className="font-bold text-black flex items-center gap-2">
-                        Bootstrap
-                      </p>
-                      <p className="text-sm text-gray-500">Experienced</p>
-                    </div>
-                  </Flex>
-
-                  <Flex>
-                    <RiVerifiedBadgeFill className='mr-5 mt-1' />
-                    <div>
-                      <p className="font-bold text-black flex items-center gap-2">
-                        Tailwind
-                      </p>
-                      <p className="text-sm text-gray-500">Experienced</p>
-                    </div>
-                  </Flex>
-
-                  <Flex>
-                    <RiVerifiedBadgeFill className='mr-5 mt-1' />
-                    <div>
-                      <p className="font-bold text-black flex items-center gap-2">
-                        Javascript
-                      </p>
-                      <p className="text-sm text-gray-500">Basic</p>
-                    </div>
-                  </Flex>
-
-                  <Flex>
-                    <RiVerifiedBadgeFill className='mr-5 mt-1' />
-                    <div>
-                      <p className="font-bold text-black flex items-center gap-2">
-                        React
-                      </p>
-                      <p className="text-sm text-gray-500">Intermediate</p>
-                    </div>
-                  </Flex>
+                <Flex className=" md:flex-row md:gap-x-24 flex-wrap flex-col lg:flex-row lg:gap-x-24 items-center">
+                <div>
+                  <SkillsBox text='Git' P_text='Intermediate' />
+                <SkillsBox text='VS Code' P_text='Experienced' />
+                <SkillsBox text='NextJs' P_text='Basic' />
                 </div>
 
+                <div>
+                  <SkillsBox text='GitHub' P_text='Intermediate' />
+                <SkillsBox text='Figma' P_text='Experienced' />
+                <SkillsBox text='Firebase' P_text='Basic' />
+                </div>
+                
+                </Flex>
               </div>
-            </div>
-          </Flex>
-        </div>
+
+        </Flex>
 
       </Container>
     </section>
