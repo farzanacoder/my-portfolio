@@ -1,15 +1,20 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Container from '../components/Container'
 import SubHeading from '../components/SubHeading'
 import Heading from '../components/Heading'
 import Button from '../components/Button'
 import Flex from '../components/Flex'
 import Image from '../components/Image'
-import orebi from '../assets/orebi.PNG'
+import orebi from '../assets/orebi.png'
 import BtnLi from '../components/btnLi'
 import { Link } from 'react-router-dom'
 
 const Orebi = () => {
+
+ useEffect(()=>{
+    window.scrollTo({top:0})
+  })
+
   return (
     <section className='bg-light py-32'>
       <Container>

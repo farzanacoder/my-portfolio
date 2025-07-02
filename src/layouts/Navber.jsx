@@ -11,6 +11,10 @@ import { TbMessageCircleUser } from 'react-icons/tb'
 import { Link, useLocation } from 'react-router-dom'
 
 const Navber = () => {
+  useEffect(()=>{
+     window.scrollTo({top:0})
+   })
+
   let [click, setClick] = useState(false)
 
   let handleClick = () => {
@@ -37,7 +41,7 @@ const Navber = () => {
       <header className=' top-0 left-0 w-full shadow z-10'>
         <nav className='relative h-full bg-light sm:hidden md:hidden lg:hidden py-4 '>
           <Flex className='px-4 justify-between items-center '>
-            <a href="index.html" target="_blank" rel="noopener noreferrer" className="text-2xl font-bold text-black italic" >Farjana</a>
+            <a href="" target="_blank" rel="noopener noreferrer" className="text-2xl font-bold text-black italic" >Farjana</a>
             <div onClick={handleClick} className="cursor-pointer">
               {
                 click ? <RxCross2 /> : <HiOutlineBars3 />
