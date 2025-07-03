@@ -5,7 +5,7 @@ import Heading from '../components/Heading'
 import Button from '../components/Button'
 import Flex from '../components/Flex'
 import Image from '../components/Image'
-import orebi from '../assets/orebi.png'
+import Ecommerce from '../assets/orebi.png'
 import BtnLi from '../components/btnLi'
 import { Link } from 'react-router-dom'
 
@@ -27,7 +27,7 @@ const Orebi = () => {
         </Flex>
 
         <div className='w-xl mx-auto my-20 h-auto bg-white p-4 rounded-4xl shadow-2xl'>
-          <Image className='w-full rounded-4xl' src={orebi} />
+          <Image className='w-full rounded-4xl' src={Ecommerce} />
         </div>
 
         <Flex className='flex-col gap-y-4'>

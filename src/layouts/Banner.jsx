@@ -2,12 +2,11 @@ import React from 'react'
 import Container from '../components/Container'
 import Button from '../components/Button'
 import SubHeading from '../components/SubHeading'
-import { FiGithub } from 'react-icons/fi'
-import { PiLinkedinLogoBold } from 'react-icons/pi'
-import { CiFacebook } from 'react-icons/ci'
-import { ImWhatsapp } from 'react-icons/im'
 import Flex from '../components/Flex'
 import { Link } from 'react-router-dom'
+import { FaGithub, FaLinkedin } from 'react-icons/fa'
+import { SiFacebook } from 'react-icons/si'
+import { IoLogoWhatsapp } from 'react-icons/io'
 
 const Banner = () => {
   return (
@@ -17,10 +16,10 @@ const Banner = () => {
         <Container>
           <Flex className='gap-x-5 items-center'>
             <div className='flex flex-col gap-y-5 absolute left-1 lg:left-24 items-center'>
-              <a href="https://github.com/farzanacoder"><FiGithub className='text-xl hover:text-light duration-500' /></a>
-              <a href="https://www.linkedin.com/in/farzana-islam-b5a478339/"><PiLinkedinLogoBold className='text-xl hover:text-light duration-500' /></a>
-              <a href="https://www.facebook.com/farzana.coder"><CiFacebook className='text-2xl hover:text-light duration-500' /></a>
-              <a href="https://wa.me/8801869214651"><ImWhatsapp className='text-xl hover:text-light duration-500' /></a>
+<a href="https://github.com/farzanacoder"><FaGithub className='text-2xl hover:text-paralight duration-500' /></a>
+          <a href="https://www.linkedin.com/in/farzana-islam-b5a478339/"><FaLinkedin className='text-2xl hover:text-paralight duration-500' /></a>
+          <a href="https://www.facebook.com/farzana.coder"><SiFacebook className='text-2xl hover:text-paralight duration-500' /></a>
+          <a href="https://wa.me/8801869214651"><IoLogoWhatsapp className='text-2xl hover:text-paralight duration-500' /></a>
             </div>
 
             <div className="my-10 text-center">

@@ -5,7 +5,7 @@ import Heading from '../components/Heading'
 import Button from '../components/Button'
 import Flex from '../components/Flex'
 import Image from '../components/Image'
-import lunchipiration from '../assets/inspiration.png'
+import InspirationImg from '../assets/inspiration.PNG'
 import BtnLi from '../components/btnLi'
 import { Link } from 'react-router-dom'
 
@@ -28,7 +28,7 @@ const Lunchipiration = () => {
         </Flex>
 
         <div className='w-xl mx-auto my-20 h-auto bg-white p-4 rounded-4xl shadow-2xl'>
-          <Image className='w-full rounded-4xl' src={lunchipiration} />
+          <Image className='w-full rounded-4xl' src={InspirationImg} />
         </div>
 
         <Flex className='flex-col gap-y-4'>
