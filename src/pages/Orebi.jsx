@@ -5,8 +5,8 @@ import Heading from '../components/Heading'
 import Button from '../components/Button'
 import Flex from '../components/Flex'
 import Image from '../components/Image'
-import Ecommerce from '../assets/orebi.png'
 import BtnLi from '../components/btnLi'
+import Ecommerce from '../assets/orebi.PNG'
 import { Link } from 'react-router-dom'
 
 const Orebi = () => {
