@@ -5,6 +5,7 @@ import Services from '../layouts/Services'
 import Contact from '../layouts/Contact'
 import Project from '../layouts/Project'
 import Banner from '../layouts/Banner'
+import Chaticon from '../components/Chaticon'
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <Services />
       <Project />
       <Contact />
+      <Chaticon/>
     </>
   )
 }

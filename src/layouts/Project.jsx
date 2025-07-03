@@ -24,6 +24,12 @@ import Lunchipiration from '../assets/inspiration.PNG'
 import { IoIosArrowRoundForward } from 'react-icons/io'
 import ProjectCard from '../components/ProjectCard'
 
+import "slick-carousel/slick/slick.css";
+import Slider from 'react-slick'
+import PrevSlide from '../components/PrevSlide'
+import NextSlide from '../components/NextSlide'
+
+
 const Project = () => {
   let [itemlist, setItemlist] = useState(3)
   let list = ['All', 'Html', 'JavaScript', 'React']
@@ -31,6 +37,16 @@ const Project = () => {
   let handleItem = (index) => {
     setItemlist(index)
   }
+
+  var settings = {
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    prevArrow: <PrevSlide/>,
+    nextArrow: <NextSlide/>,
+  };
+
   return (
     <section id='project' className='bg-light pb-20'>
       <Container>
@@ -94,58 +110,61 @@ const Project = () => {
           {
             itemlist === 0 ? (
 
-              <Flex className='gap-5 flex-wrap'>
-                <ProjectCard title='Animation' catagory='Html' image={Animation} />
-                <ProjectCard title='Foodie' catagory='Html' image={Restuarant} />
-                <ProjectCard title='Omah' catagory='Html' image={Omah} />
-                <ProjectCard title='Nextcent' catagory='Html' image={Nexcent} />
-                <ProjectCard title='Fresh' catagory='Html' image={Fresh} />
-                <ProjectCard title='Startup' catagory='Html' image={Startup} />
-                <ProjectCard title='UI' catagory='Html' image={Ui} />
-                <ProjectCard title='Petroil' catagory='Html' image={Petroil} />
-                <ProjectCard title='GoogleDrk' catagory='Html' image={GoogleDrk} />
-                <ProjectCard title='GogleLight' catagory='Html' image={GogleLight} />
-                <ProjectCard title='Cuda' catagory='Html' image={Cuda} />
-                <ProjectCard title='Adventure' catagory='Html' image={Adventure} />
+              <Slider {...settings}>
+                <ProjectCard title='Animation' category='Html' image={Animation} />
+                <ProjectCard title='Foodie' category='Html' image={Restuarant} />
+                <ProjectCard title='Omah' category='Html' image={Omah} />
+                <ProjectCard title='Nextcent' category='Html' image={Nexcent} />
+                <ProjectCard title='Fresh' category='Html' image={Fresh} />
+                <ProjectCard title='Startup' category='Html' image={Startup} />
+                <ProjectCard title='UI' category='Html' image={Ui} />
+                <ProjectCard title='Petroil' category='Html' image={Petroil} />
+                <ProjectCard title='GoogleDrk' category='Html' image={GoogleDrk} />
+                <ProjectCard title='GogleLight' category='Html' image={GogleLight} />
+                <ProjectCard title='Cuda' category='Html' image={Cuda} />
+                <ProjectCard title='Adventure' category='Html' image={Adventure} />
 
-                <ProjectCard title='Flower' catagory='Javascript' image={Btnclick} />
+                <ProjectCard title='Flower' category='Javascript' image={Btnclick} />
 
-                <ProjectCard title='Orebi' catagory='React' image={Orebi} />
-                <ProjectCard title='Lunchpiration' catagory='React' image={Lunchipiration} />
-                <ProjectCard title='Innovate' catagory='React' image={Innovate} />
-              </Flex>
+                <ProjectCard title='Orebi' category='React' image={Orebi} />
+                <ProjectCard title='Lunchpiration' category='React' image={Lunchipiration} />
+                <ProjectCard title='Innovate' category='React' image={Innovate} />
+              </Slider>
             )
               :
               itemlist === 1 ? (
-                <Flex className='gap-5 flex-wrap'>
-                  <ProjectCard title='Animation' catagory='Html' image={Animation} />
-                  <ProjectCard title='Foodie' catagory='Html' image={Restuarant} />
-                  <ProjectCard title='Omah' catagory='Html' image={Omah} />
-                  <ProjectCard title='Nextcent' catagory='Html' image={Nexcent} />
-                  <ProjectCard title='Fresh' catagory='Html' image={Fresh} />
-                  <ProjectCard title='Startup' catagory='Html' image={Startup} />
-                  <ProjectCard title='UI' catagory='Html' image={Ui} />
-                  <ProjectCard title='Petroil' catagory='Html' image={Petroil} />
-                  <ProjectCard title='GoogleDrk' catagory='Html' image={GoogleDrk} />
-                  <ProjectCard title='GogleLight' catagory='Html' image={GogleLight} />
-                  <ProjectCard title='Cuda' catagory='Html' image={Cuda} />
-                  <ProjectCard title='Adventure' catagory='Html' image={Adventure} />
-                </Flex>
+                <Slider {...settings}>
+
+                  <ProjectCard title='Animation' category='Html' image={Animation} />
+                  <ProjectCard title='Foodie' category='Html' image={Restuarant} />
+                  <ProjectCard title='Omah' category='Html' image={Omah} />
+                  <ProjectCard title='Nextcent' category='Html' image={Nexcent} />
+                  <ProjectCard title='Fresh' category='Html' image={Fresh} />
+                  <ProjectCard title='Startup' category='Html' image={Startup} />
+                  <ProjectCard title='UI' category='Html' image={Ui} />
+                  <ProjectCard title='Petroil' category='Html' image={Petroil} />
+                  <ProjectCard title='GoogleDrk' category='Html' image={GoogleDrk} />
+                  <ProjectCard title='GogleLight' category='Html' image={GogleLight} />
+                  <ProjectCard title='Cuda' category='Html' image={Cuda} />
+                  <ProjectCard title='Adventure' category='Html' image={Adventure} />
+                </Slider>
+
               )
                 :
                 itemlist == 2 ? (
-                  <Flex className='gap-5 flex-wrap'>
-                    <ProjectCard title='Flower' catagory='Javascript' image={Btnclick} />
-                  </Flex>
+                  <Slider {...settings}>
+                    <ProjectCard title='Flower' category='Javascript' image={Btnclick} />
+                  </Slider>
+
                 )
                   :
                   (
-                    <Flex className='gap-x-5 flex-wrap'>
+                    <Slider {...settings}>
+                      <ProjectCard title='Orebi' category='React' image={Orebi} />
+                      <ProjectCard title='Lunchpiration' category='React' image={Lunchipiration} />
+                      <ProjectCard title='Innovate' category='React' image={Innovate} />
+                    </Slider>
 
-                      <ProjectCard title='Orebi' catagory='React' image={Orebi} />
-                      <ProjectCard title='Lunchpiration' catagory='React' image={Lunchipiration} />
-                      <ProjectCard title='Innovate' catagory='React' image={Innovate} />
-                    </Flex>
                   )
 
           }

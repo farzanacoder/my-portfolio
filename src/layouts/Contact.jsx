@@ -13,7 +13,7 @@ import { FaFacebookMessenger } from 'react-icons/fa';
 
 export default function ContactMe() {
   return (
-    <section id="contact" className="bg-light pb-32">
+    <section id="contact" className="bg-light pb-32 pt-28">
       <Container>
         <div className="text-center mb-24">
           <Heading text='Contact Me' />
