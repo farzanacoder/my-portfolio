@@ -13,16 +13,16 @@ const Footer = () => {
             <a href="index.html" target="_blank" rel="noopener noreferrer" className="text-2xl font-bold italic" >Farjana</a>
         <Flex className=" justify-center gap-6 my-8">
           <Link state={{scrollTo:'about'}}>
-                  <List text='About' />
+                  <List className='hover:text-paralight duration-500' text='About' />
                 </Link>
                 <Link state={{scrollTo:'skills'}}>
-                  <List text='Skills' />
+                  <List className='hover:text-paralight duration-500' text='Skills' />
                 </Link>
                 <Link state={{scrollTo:'services'}}>
-                  <List text='Services' />
+                  <List className='hover:text-paralight duration-500' text='Services' />
                 </Link>
                 <Link state={{scrollTo:'project'}}>
-                  <List text='Project' />
+                  <List className='hover:text-paralight duration-300' text='Project' />
                 </Link>
         </Flex>
         <Flex className="pb-10 justify-center gap-6 mb-4">
@@ -31,7 +31,7 @@ const Footer = () => {
           <a href="https://www.facebook.com/farzana.coder"><SiFacebook className='text-2xl hover:text-paralight duration-500' /></a>
           <a href="https://wa.me/8801869214651"><IoLogoWhatsapp className='text-2xl hover:text-paralight duration-500' /></a>
         </Flex>
-        <p className="text-md">© farzanacoder. All rights reserved</p>
+        <p className="text-md">© <a href="" className='underline hover:text-paralight duration-500'>farzanacoder</a>. All rights reserved</p>
       </footer>
     </div>
   );
