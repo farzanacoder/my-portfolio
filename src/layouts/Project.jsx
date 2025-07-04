@@ -45,6 +45,27 @@ const Project = () => {
     slidesToScroll: 1,
     prevArrow: <PrevSlide/>,
     nextArrow: <NextSlide/>,
+
+    responsive: [
+      {
+        breakpoint: 1024, // tablet
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 768, // mobile landscape
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 480, // mobile portrait
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   };
 
   return (

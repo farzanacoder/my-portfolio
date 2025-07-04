@@ -52,7 +52,7 @@ const Navber = () => {
           {
             click &&
             <>
-              <ul className='absolute top-16 left-0 bg-light w-full flex flex-col items-center justify-center gap-y-5 py-4'>
+              <ul className='absolute top-16 left-0 bg-light w-full flex flex-col items-center justify-center gap-y-5 pt-6'>
                 <Link to='/' state={{ scrollTo: 'home' }}>
                   <Flex className='items-center gap-x-2'>
                     <AiOutlineHome className='text-sm' />
@@ -104,7 +104,7 @@ const Navber = () => {
 
       {/* desktop menu here */}
 
-      <nav className=' z-10 w-full shadow  hidden xl:block lg:block md:block sm:block bg-light py-5 '>
+      <nav className=' z-10 w-full shadow  hidden xl:block lg:block md:block sm:block bg-light pt-10 '>
         <Container>
           <Flex>
             <div className='w-5/12'>
