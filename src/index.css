@@ -17,9 +17,12 @@
   --font-poppins: "Poppins", sans-serif;
   
 }
-
-body {
+body{
   @apply font-poppins;
 }
+html, body {
+  overflow-x: hidden;
+}
+
 
 

@@ -15,21 +15,21 @@ export default function ContactMe() {
   return (
     <section id="contact" className="bg-light pb-32 pt-28">
       <Container>
-        <div className="text-center mb-24">
+        <div className="text-center mb-10">
           <Heading text='Contact Me' />
-          <SubHeading className='w-xl mx-auto' text='Have a project or just want to say hi? Fill out the form or reach out via info below.' />
+          <SubHeading text='Have a project or just want to say hi? Fill out the form or reach out via info below.' />
         </div>
 
-        <Flex className='justify-evenly'>
+        <Flex className='lg:justify-evenly flex-col-reverse lg:flex-row mx-7'>
 
-          <div className="space-y-6">
+          <div className="space-y-6 lg:mt-0 mt-20">
             <Msgbox title='Email' mailTxt='user@gmail.com' Icon={MdMarkEmailUnread} link={'farzanaashif10@gmail.com'}/>
             <Msgbox title='WhatsApp' mailTxt='+8801869214651' Icon={IoLogoWhatsapp} link={'https://wa.me/8801869214651'}/>
             <Msgbox title='Messenger' mailTxt='farzana.coder' Icon={FaFacebookMessenger} link={"https://www.messenger.com/t/28187013384247189/"}/>
           </div>
 
 
-          <div className="h-auto w-[500px]">
+          <div className="h-auto w-[260px] lg:w-[500px]">
             <form className="space-y-6">
               <Label text='Your Name' title='Name' />
               <Label text='you@gmail.com' title='Email' />

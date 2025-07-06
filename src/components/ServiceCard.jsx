@@ -10,7 +10,7 @@ import Image from './Image'
 
 const ServiceCard = ({title,image, text}) => {
   return (
-        <div className='relative group/box w-[270px] h-[300px] rounded-2xl'>
+        <div className='relative group/box -left-[85px] w-[270px] h-[300px] rounded-2xl'>
             <Image className='w-full h-full rounded-t-2xl' src={image}/>
       
             <div className='absolute w-[190px] h-[100px] duration-500 hover:bg-[#04050780] bg-[#2f354280] rounded-tr-xl -bottom-[30px] left-0'>

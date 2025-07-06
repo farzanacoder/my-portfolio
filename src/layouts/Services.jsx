@@ -11,11 +11,11 @@ import Personal from '../assets/personal.jpg'
 
 const Services = () => {
   return (
-    <section id='services' className='text-center bg-light py-20 pb-40'>
+    <section id='services' className='text-center bg-light py-20 lg:pb-40'>
       <Container>
          <Heading text='Services'/>
-        <SubHeading className='pb-16 w-2xl mx-auto' text='Our consultants have years of experience on the in success. ​Through the provision of our services. Find the service we provide'/>
-         <Flex className='justify-between'>
+        <SubHeading className='' text='Our consultants have years of experience on the in success. ​Through the provision of our services. Find the service we provide'/>
+         <Flex className='lg:justify-between lg:flex-row flex-col gap-y-20 mx-28 lg:gap-y-0 lg:mx-0'>
             <ServiceCard title='E-Commerce' text='Development' image={Ecommerce}/>
             <ServiceCard title='Social Media' text='Development' image={Social}/>
             <ServiceCard title='Corporate' text='Development' image={Corporate}/>

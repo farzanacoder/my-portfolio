@@ -48,23 +48,34 @@ const Project = () => {
 
     responsive: [
       {
-        breakpoint: 1024, // tablet
+        breakpoint: 1024,
         settings: {
-          slidesToShow: 2,
-        },
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+        }
       },
       {
-        breakpoint: 768, // mobile landscape
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 480, // mobile portrait
+        breakpoint: 600,
         settings: {
           slidesToShow: 1,
-        },
+          slidesToScroll: 1,
+        }
       },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 320,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
     ],
   };
 
@@ -74,10 +85,10 @@ const Project = () => {
         <Heading text='Project' />
         <SubHeading className='' text='Most recent work' />
 
-        <Flex className='py-10 my-20 flex-col lg:flex-row lg:justify-evenly'>
+        <Flex className='lg:py-10 py-0 lg:my-20 flex-col lg:flex-row lg:justify-evenly'>
           <Link to='/orebi'>
-            <div className='w-xl mx-auto h-auto bg-white p-4 rounded-4xl shadow-2xl'>
-              <Image className='w-full rounded-4xl' src={Orebi} />
+            <div className='lg:w-xl lg:mb-0 mb-16 w-[300px] mx-auto h-auto bg-white p-4 rounded-4xl shadow-2xl'>
+              <Image className='lg:w-full w-full rounded-4xl' src={Orebi} />
             </div>
           </Link>
 
@@ -94,10 +105,10 @@ const Project = () => {
         </Flex>
 
 
-        <Flex className='py-10 my-20 flex-col lg:flex-row lg:justify-evenly'>
+        <Flex className='lg:py-10 pt-20 lg:my-20 flex-col lg:flex-row lg:justify-evenly'>
           <Link to='/lunchipiration'>
-            <div className='w-xl mx-auto h-auto bg-white p-4 rounded-4xl shadow-2xl'>
-              <Image className='w-full rounded-4xl' src={Lunchipiration} />
+            <div className='lg:w-xl lg:mb-0 mb-16 w-[300px] mx-auto h-auto bg-white p-4 rounded-4xl shadow-2xl'>
+              <Image className='lg:w-full w-full rounded-4xl' src={Lunchipiration} />
             </div>
           </Link>
 
@@ -122,7 +133,7 @@ const Project = () => {
             {
               list.map((item, index) => (
                 <div key={index} onClick={() => handleItem(index)}>
-                  <h1 className={`${index === itemlist ? 'bg-drk text-white' : ''} text-2xl font-medium py-2 px-3 duration-500 rounded-lg cursor-pointer`}>{item}</h1>
+                  <h1 className={`${index === itemlist ? 'bg-drk text-white' : ''} lg:text-2xl text-md font-medium lg:py-2 lg:px-3 p-1.5 duration-500 rounded-lg cursor-pointer`}>{item}</h1>
                 </div>
               ))
             }

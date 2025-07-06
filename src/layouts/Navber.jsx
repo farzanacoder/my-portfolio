@@ -38,8 +38,8 @@ const Navber = () => {
 
     <>
       {/* mobile menu here */}
-      <header className=' top-0 left-0 w-full shadow z-10'>
-        <nav className='relative h-full bg-light sm:hidden md:hidden lg:hidden py-4 '>
+      <header className=' top-0 left-0 lg:w-full  shadow z-10'>
+        <nav className='relative h-full bg-light sm:hidden md:hidden lg:hidden py-4 pb-10'>
           <Flex className='px-4 justify-between items-center '>
             <a href="" target="_blank" rel="noopener noreferrer" className="text-2xl font-bold text-black italic" >Farjana</a>
             <div onClick={handleClick} className="cursor-pointer">
@@ -52,7 +52,7 @@ const Navber = () => {
           {
             click &&
             <>
-              <ul className='absolute top-16 left-0 bg-light w-full flex flex-col items-center justify-center gap-y-5 pt-6'>
+              <ul className=' bg-light w-full flex flex-col items-center justify-center gap-y-5 pt-6'>
                 <Link to='/' state={{ scrollTo: 'home' }}>
                   <Flex className='items-center gap-x-2'>
                     <AiOutlineHome className='text-sm' />

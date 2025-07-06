@@ -31,7 +31,7 @@ const Footer = () => {
           <a href="https://www.facebook.com/farzana.coder"><SiFacebook className='text-2xl hover:text-paralight duration-500' /></a>
           <a href="https://wa.me/8801869214651"><IoLogoWhatsapp className='text-2xl hover:text-paralight duration-500' /></a>
         </Flex>
-        <p className="text-md">© <a href="" className='underline hover:text-paralight duration-500'>farzanacoder</a>. All rights reserved</p>
+        <p className="lg:text-lg text-sm">© <a href="" className='underline hover:text-paralight duration-500'>farzanacoder</a>. All rights reserved</p>
       </footer>
     </div>
   );

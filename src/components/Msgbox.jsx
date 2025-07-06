@@ -12,7 +12,6 @@ const Msgbox = ({ title, mailTxt, Icon, link }) => {
                 <a href={link} target="_blank" rel="noopener noreferrer" className='text-sublight text-sm'>Write Me</a>
                 <GoArrowRight className='text-sublight  text-sm font-normal' />
             </Flex>
-
         </div>
     )
 }

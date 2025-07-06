@@ -6,8 +6,8 @@ import Button from '../components/Button'
 import Flex from '../components/Flex'
 import Image from '../components/Image'
 import InspirationImg from '../assets/inspiration.PNG'
-import BtnLi from '../components/btnLi'
 import { Link } from 'react-router-dom'
+import Item from '../components/Item'
 
 const Lunchipiration = () => {
   
@@ -21,17 +21,17 @@ const Lunchipiration = () => {
       <Container>
         <Flex className='flex-col justify-center items-center gap-y-5'>
           <Heading text='Lunchipiration' />
-          <SubHeading className='w-4xl' text='This page contains the case study of TalksME Open-Source Project which includes the Project Overview, Tools Used and Live Links to the official product.' />
+          <SubHeading className='lg:w-4xl w-md' text='This page contains the case study of TalksME Open-Source Project which includes the Project Overview, Tools Used and Live Links to the official product.' />
           <a href="https://github.com/farzanacoder/Lunchpiration" target="_blank" rel="noopener noreferrer">
             <Button btnTxt='Project Link' />
           </a>
         </Flex>
 
-        <div className='w-xl mx-auto my-20 h-auto bg-white p-4 rounded-4xl shadow-2xl'>
+        <div className='lg:w-xl w-[300px] mx-auto my-20 h-auto bg-white lg:p-4 p-3 rounded-4xl shadow-2xl'>
           <Image className='w-full rounded-4xl' src={InspirationImg} />
         </div>
 
-        <Flex className='flex-col gap-y-4'>
+        <Flex className='flex-col gap-y-4 px-5'>
           <Heading text='Project OverView' />
           <SubHeading text={`Orebi, built with the dynamic capabilities of React.js and the sleek aesthetics of Tailwind CSS, delivers a seamless and secure shopping experience for users across all devices.`} />
           <SubHeading text={`With its intuitive design and customizable features, Orebi, powered by React.js and tailored with Tailwind CSS, ensures an efficient and user-centric eCommerce journey for customers of all preferences.`} />
@@ -41,14 +41,14 @@ const Lunchipiration = () => {
 
         <div className='py-20'>
           <Heading className='pb-5' text='Tools Used' />
-          <Flex className='lg:gap-10 ml-60 items-center justify-center flex-wrap w-2xl'>
-            <BtnLi text='Tailwind'/>
-            <BtnLi text='Javascript'/>
-            <BtnLi text='React'/>
-            <BtnLi text='React Redux'/>
-            <BtnLi text='Git'/>
-            <BtnLi text='GitHub'/>
-            <BtnLi text='Stripe'/>
+          <Flex className='lg:gap-10 gap-7 lg:ml-60 ml-0 items-center justify-center flex-wrap lg:w-2xl w-xs'>
+            <Item text='Tailwind'/>
+            <Item text='Javascript'/>
+            <Item text='React'/>
+            <Item text='React Redux'/>
+            <Item text='Git'/>
+            <Item text='GitHub'/>
+            <Item text='Stripe'/>
           </Flex>
         </div>
 

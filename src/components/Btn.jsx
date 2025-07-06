@@ -1,6 +1,6 @@
 import React from 'react'
 
-const btnLi = ({ className, text }) => {
+const Btn = ({ className, text }) => {
   return (
     <div>
       <h5 className={`${className} w-30 h-10 text-center pt-2 bg-[#97959340]`}>{text}</h5>
@@ -8,4 +8,4 @@ const btnLi = ({ className, text }) => {
   )
 }
 
-export default btnLi
+export default Btn

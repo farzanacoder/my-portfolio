@@ -9,17 +9,18 @@ const Skills = () => {
   return (
     <section id='skills' className='bg-light'>
       <Container>
-        <div className='py-20'>
-          <Heading className='lg:text-4xl text-[23px]' text='Skills' />
-          <SubHeading className='!text-sm lg:!text-xl' text='My technical level' />
+        <div className='pt-16 pb-8 lg:pb-20 lg:pt-20'>
+          <Heading text='Skills' />
+          <SubHeading text='My technical level' />
         </div>
 
-        <Flex className='pb-20 flex-col md:flex-row md:mx-7 md:gap-4 lg:flex-row gap-y-10 lg:mx-0 mx-7  ml-7 lg:ml-0 justify-evenly'>
-              <div className="bg-white rounded-2xl shadow-xl p-8 px-10 w-full md:w-1/2">
-                <h3 className="text-center text-xl lg:text-2xl font-semibold text-black mb-8">
+        <Flex className='lg:pb-20 pb-5 flex-col md:flex-row md:mx-7 md:gap-4 lg:flex-row gap-y-10 lg:mx-0 mx-7  ml-7 lg:ml-0 justify-evenly'>
+
+              <div className="bg-white rounded-2xl shadow-xl p-6 px-10 w-full md:w-1/2">
+                <h3 className="text-center text-lg lg:text-2xl font-semibold text-black mb-8">
                   Frontend developer
                 </h3>
-                <Flex className=" flex-wrap flex-col md:flex-row md:gap-x-24  lg:flex-row lg:gap-x-24 items-center">
+                <Flex className="flex-row gap-x-6 md:gap-x-24 lg:gap-x-24 justify-center items-center">
                 <div>
                   <SkillsBox text='HTML' P_text='Experienced' />
                 <SkillsBox text='Bootstrap' P_text='Experienced' />
@@ -35,10 +36,10 @@ const Skills = () => {
 
 
               <div className="bg-white rounded-2xl shadow-xl p-8 px-10 w-full md:w-1/2">
-                <h3 className="text-center text-xl lg:text-2xl font-semibold text-black mb-8">
+                <h3 className="text-center text-lg lg:text-2xl font-semibold text-black mb-8">
                   Tools & Platforms
                 </h3>
-                <Flex className=" md:flex-row md:gap-x-24 flex-wrap flex-col lg:flex-row lg:gap-x-24 items-center">
+                <Flex className=" flex-row gap-x-6 lg:gap-x-24 justify-center items-center">
                 <div>
                   <SkillsBox text='Git' P_text='Intermediate' />
                 <SkillsBox text='VS Code' P_text='Experienced' />
