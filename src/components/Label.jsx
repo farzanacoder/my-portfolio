@@ -7,7 +7,7 @@ const Label = ({text,title}) => {
             <input
                 type="text"
                 placeholder={text}
-                className="w-full px-5 py-3 rounded-xl border border-gray-300 bg-light focus:outline-none focus:ring-2 focus:ring-indigo-400"
+                className="w-full text-[15px] lg:text-md px-5 py-3 rounded-xl border border-gray-300 bg-light focus:outline-none focus:ring-2 focus:ring-indigo-400"
             />
         </div>
     )

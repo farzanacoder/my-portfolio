@@ -14,7 +14,7 @@ const Banner = () => {
   return (
     <>
       {/* Hero Section here*/}
-      <section id='Banner' className="flex flex-col items-center py-10 lg:pt-20 pt-20 bg-light">
+      <section id='Banner' className="flex flex-col items-center py-10 lg:py-20 lg:pt-48 pt-20 bg-light">
         <Container>
           <Flex className='gap-x-5 items-center'>
             <div className='flex flex-col gap-y-7 lg:mt-0 mt-24 absolute left-1 lg:left-24 items-center'>

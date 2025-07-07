@@ -6,6 +6,7 @@ import Contact from '../layouts/Contact'
 import Project from '../layouts/Project'
 import Banner from '../layouts/Banner'
 import Chaticon from '../components/Chaticon'
+import ProjectCounter from '../layouts/ProjectCounter'
 
 const Home = () => {
   return (
@@ -13,8 +14,9 @@ const Home = () => {
       <Banner />
       <About />
       <Skills />
-      <Services />
       <Project />
+      <Services />
+      <ProjectCounter/>
       <Contact />
       <Chaticon/>
     </>

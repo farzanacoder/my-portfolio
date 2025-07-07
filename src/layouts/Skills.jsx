@@ -7,9 +7,9 @@ import Flex from '../components/Flex'
 
 const Skills = () => {
   return (
-    <section id='skills' className='bg-light'>
+    <section id='skills' className='bg-light lg:py-16'>
       <Container>
-        <div className='pt-16 pb-8 lg:pb-20 lg:pt-20'>
+        <div className='pt-16 pb-8'>
           <Heading text='Skills' />
           <SubHeading text='My technical level' />
         </div>

@@ -11,7 +11,7 @@ import Personal from '../assets/personal.jpg'
 
 const Services = () => {
   return (
-    <section id='services' className='text-center bg-light py-20 lg:pb-40'>
+    <section id='services' className='text-center bg-light py-20 lg:py-32'>
       <Container>
          <Heading text='Services'/>
         <SubHeading className='' text='Our consultants have years of experience on the in success. ​Through the provision of our services. Find the service we provide'/>

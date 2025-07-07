@@ -13,7 +13,7 @@ import { FaFacebookMessenger } from 'react-icons/fa';
 
 export default function ContactMe() {
   return (
-    <section id="contact" className="bg-light pb-32 pt-28">
+    <section id="contact" className="bg-light pb-32 pt-10">
       <Container>
         <div className="text-center mb-10">
           <Heading text='Contact Me' />
@@ -38,7 +38,7 @@ export default function ContactMe() {
                 <textarea
                   rows="5"
                   placeholder="Your message..."
-                  className="w-full px-5 py-3 rounded-xl border border-gray-300 bg-light focus:outline-none focus:ring-2 focus:ring-indigo-400"
+                  className="w-full lg:text-md text-[15px] px-5 py-3 rounded-xl border border-gray-300 bg-light focus:outline-none focus:ring-2 focus:ring-indigo-400"
                 />
               </div>
               <Button btnTxt='Send Nessage' />

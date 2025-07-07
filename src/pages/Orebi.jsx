@@ -20,7 +20,7 @@ const Orebi = () => {
       <Container>
         <Flex className='flex-col justify-center items-center gap-y-5'>
           <Heading text='OREBI' />
-          <SubHeading className='lg:w-4xl w-md' text='This page contains the case study of TalksME Open-Source Project which includes the Project Overview, Tools Used and Live Links to the official product.' />
+          <SubHeading className='lg:w-4xl px-3 w-[300px]' text='This page contains the case study of TalksME Open-Source Project which includes the Project Overview, Tools Used and Live Links to the official product.' />
           <a href="https://github.com/farzanacoder/Ecommerce_project" target="_blank" rel="noopener noreferrer">
             <Button btnTxt='Project Link' />
           </a>

@@ -20,6 +20,8 @@ import Restuarant from '../assets/restuarant.jpg'
 import Ui from '../assets/ui.jpg'
 import Startup from '../assets/sttartup.jpg'
 import Innovate from '../assets/innovate.jpg'
+import ClickJs from '../assets/click.jpg'
+import Todo from '../assets/crud.jpg'
 import Lunchipiration from '../assets/inspiration.PNG'
 import { IoIosArrowRoundForward } from 'react-icons/io'
 import ProjectCard from '../components/ProjectCard'
@@ -43,8 +45,8 @@ const Project = () => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    prevArrow: <PrevSlide/>,
-    nextArrow: <NextSlide/>,
+    prevArrow: <PrevSlide />,
+    nextArrow: <NextSlide />,
 
     responsive: [
       {
@@ -143,58 +145,63 @@ const Project = () => {
             itemlist === 0 ? (
 
               <Slider {...settings}>
-                <ProjectCard title='Animation' category='Html' image={Animation} />
-                <ProjectCard title='Foodie' category='Html' image={Restuarant} />
-                <ProjectCard title='Omah' category='Html' image={Omah} />
-                <ProjectCard title='Nextcent' category='Html' image={Nexcent} />
-                <ProjectCard title='Fresh' category='Html' image={Fresh} />
-                <ProjectCard title='Startup' category='Html' image={Startup} />
-                <ProjectCard title='UI' category='Html' image={Ui} />
-                <ProjectCard title='Petroil' category='Html' image={Petroil} />
-                <ProjectCard title='GoogleDrk' category='Html' image={GoogleDrk} />
-                <ProjectCard title='GogleLight' category='Html' image={GogleLight} />
-                <ProjectCard title='Cuda' category='Html' image={Cuda} />
-                <ProjectCard title='Adventure' category='Html' image={Adventure} />
+                <ProjectCard link='https://farzanacoder.github.io/animation/' title='Animation' category='Html' image={Animation} />
+                <ProjectCard link='https://farzanacoder.github.io/restuarentsWebsite/' title='Foodie' category='Html' image={Restuarant} />
+                <ProjectCard link='https://farzanacoder.github.io/0mah/' title='Omah' category='Html' image={Omah} />
+                <ProjectCard link='https://farzanacoder.github.io/NextCent/' title='Nextcent' category='Html' image={Nexcent} />
+                <ProjectCard link='https://farzanacoder.github.io/Fresh/' title='Fresh' category='Html' image={Fresh} />
+                <ProjectCard link='https://farzanacoder.github.io/StartUp/' title='Startup' category='Html' image={Startup} />
+                <ProjectCard link='https://farzanacoder.github.io/old_project/' title='UI' category='Html' image={Ui} />
+                <ProjectCard link='https://farzanacoder.github.io/PETROIL/' title='Petroil' category='Html' image={Petroil} />
+                <ProjectCard link='https://farzanacoder.github.io/google_drk_theme/' title='GoogleDrk' category='Html' image={GoogleDrk} />
+                <ProjectCard link='https://farzanacoder.github.io/google_light_theme/' title='GogleLight' category='Html' image={GogleLight} />
+                <ProjectCard link='https://farzanacoder.github.io/old_project_1/' title='Cuda' category='Html' image={Cuda} />
+                <ProjectCard link='https://farzanacoder.github.io/Adventure/' title='Adventure' category='Html' image={Adventure} />
 
-                <ProjectCard title='Flower' category='Javascript' image={Btnclick} />
+                <ProjectCard link='https://farzanacoder.github.io/btnClick/' title='Flower' category='Javascript' image={Btnclick} />
+                <ProjectCard link='https://farzanacoder.github.io/todo_App/' title='Todo App' category='Javascript' image={Todo} />
+                <ProjectCard link='https://farzanacoder.github.io/clickJs/' title='ClickJs' category='Javascript' image={ClickJs} />
 
-                <ProjectCard title='Orebi' category='React' image={Orebi} />
-                <ProjectCard title='Lunchpiration' category='React' image={Lunchipiration} />
-                <ProjectCard title='Innovate' category='React' image={Innovate} />
+                <ProjectCard link='https://farzanacoder.github.io/Ecommerce_project/' title='Orebi' category='React' image={Orebi} />
+                <ProjectCard link='https://farzanacoder.github.io/Lunchpiration/' title='Lunchpiration' category='React' image={Lunchipiration} />
+                <ProjectCard link='https://farzanacoder.github.io/innovate/' title='Innovate' category='React' image={Innovate} />
               </Slider>
             )
               :
               itemlist === 1 ? (
                 <Slider {...settings}>
 
-                  <ProjectCard title='Animation' category='Html' image={Animation} />
-                  <ProjectCard title='Foodie' category='Html' image={Restuarant} />
-                  <ProjectCard title='Omah' category='Html' image={Omah} />
-                  <ProjectCard title='Nextcent' category='Html' image={Nexcent} />
-                  <ProjectCard title='Fresh' category='Html' image={Fresh} />
-                  <ProjectCard title='Startup' category='Html' image={Startup} />
-                  <ProjectCard title='UI' category='Html' image={Ui} />
-                  <ProjectCard title='Petroil' category='Html' image={Petroil} />
-                  <ProjectCard title='GoogleDrk' category='Html' image={GoogleDrk} />
-                  <ProjectCard title='GogleLight' category='Html' image={GogleLight} />
-                  <ProjectCard title='Cuda' category='Html' image={Cuda} />
-                  <ProjectCard title='Adventure' category='Html' image={Adventure} />
+                  <ProjectCard link='https://farzanacoder.github.io/animation/' title='Animation' category='Html' image={Animation} />
+                  <ProjectCard link='https://farzanacoder.github.io/restuarentsWebsite/' title='Foodie' category='Html' image={Restuarant} />
+                  <ProjectCard link='https://farzanacoder.github.io/0mah/' title='Omah' category='Html' image={Omah} />
+                  <ProjectCard link='https://farzanacoder.github.io/NextCent/' title='Nextcent' category='Html' image={Nexcent} />
+                  <ProjectCard link='https://farzanacoder.github.io/Fresh/' title='Fresh' category='Html' image={Fresh} />
+                  <ProjectCard link='https://farzanacoder.github.io/StartUp/' title='Startup' category='Html' image={Startup} />
+                  <ProjectCard link='https://farzanacoder.github.io/old_project/' title='UI' category='Html' image={Ui} />
+                  <ProjectCard link='https://farzanacoder.github.io/PETROIL/' title='Petroil' category='Html' image={Petroil} />
+                  <ProjectCard link='https://farzanacoder.github.io/google_drk_theme/' title='GoogleDrk' category='Html' image={GoogleDrk} />
+                  <ProjectCard link='https://farzanacoder.github.io/google_light_theme/' title='GogleLight' category='Html' image={GogleLight} />
+                  <ProjectCard link='https://farzanacoder.github.io/old_project_1/' title='Cuda' category='Html' image={Cuda} />
+                  <ProjectCard link='https://farzanacoder.github.io/Adventure/' title='Adventure' category='Html' image={Adventure} />
                 </Slider>
 
               )
                 :
                 itemlist == 2 ? (
                   <Slider {...settings}>
-                    <ProjectCard title='Flower' category='Javascript' image={Btnclick} />
+                    <ProjectCard link='https://farzanacoder.github.io/btnClick/' title='Flower' category='Javascript' image={Btnclick} />
+                    <ProjectCard link='https://farzanacoder.github.io/todo_App/' title='Todo App' category='Javascript' image={Todo} />
+                    <ProjectCard link='https://farzanacoder.github.io/clickJs/' title='ClickJs' category='Javascript' image={ClickJs} />
                   </Slider>
 
                 )
                   :
                   (
                     <Slider {...settings}>
-                      <ProjectCard title='Orebi' category='React' image={Orebi} />
-                      <ProjectCard title='Lunchpiration' category='React' image={Lunchipiration} />
-                      <ProjectCard title='Innovate' category='React' image={Innovate} />
+
+                      <ProjectCard link='https://ecommerce-project-one-rust.vercel.app/' title='Orebi' category='React' image={Orebi} />
+                      <ProjectCard link='https://lunchpiration.vercel.app/' title='Lunchpiration' category='React' image={Lunchipiration} />
+                      <ProjectCard link='https://innovate-tawny.vercel.app/' title='Innovate' category='React' image={Innovate} />
                     </Slider>
 
                   )
