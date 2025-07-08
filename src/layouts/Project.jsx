@@ -30,6 +30,7 @@ import "slick-carousel/slick/slick.css";
 import Slider from 'react-slick'
 import PrevSlide from '../components/PrevSlide'
 import NextSlide from '../components/NextSlide'
+import ProjectCounter from './ProjectCounter'
 
 
 const Project = () => {

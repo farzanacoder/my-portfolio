@@ -1,46 +1,26 @@
 import React, { useEffect, useState } from 'react';
 import { FaReact } from 'react-icons/fa';
-import { ImHtmlFive } from 'react-icons/im';
+import { ImHtmlFive2 } from 'react-icons/im';
 import { TbBrandJavascript } from 'react-icons/tb';
 import Container from '../components/Container';
 import Flex from '../components/Flex';
+import Heading from '../components/Heading';
+import SubHeading from '../components/SubHeading';
+import CounterBox from '../components/CounterBox';
 
-const statsData = [
-  { icon: <ImHtmlFive size={30} className="text-black" />, number: 12, label: "Html" },
-  { icon: <TbBrandJavascript size={40} className="text-black" />, number: 5, label: "Javascript" },
-  { icon: <FaReact size={40} className="text-black" />, number: 3, label: "React" },
-];
-
-const CounterBox = ({ icon, number, label }) => {
-  const [count, setCount] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCount(prev => (prev < number ? prev + 1 : 0));
-    }, 1000); // 1000ms = 1 second
-
-    return () => clearInterval(interval);
-  }, [number]);
-
-  return (
-    <div className="shadow-2xl bg-white rounded-2xl px-32 py-6  text-center hover:scale-105 duration-300">
-      <div className="mb-3">{icon}</div>
-      <h2 className="text-3xl font-bold text-gray-800">{count}</h2>
-      <p className="text-sublight text-xl mt-1">{label}</p>
-    </div>
-  );
-};
 
 const ProjectCounter = () => {
   return (
     <section className='bg-light pt-20'>
-        <Container>
-        <Flex className="py-10 px-4 justify-between gap-6">
-      {statsData.map((item, index) => (
-        <CounterBox key={index} {...item} />
-      ))}
-    </Flex>
-    </Container>
+      <Container>
+        <Heading text='Total Works' />
+        <SubHeading text='As a dedicated developer, I strive to write clean code, solve real-world problems, and deliver impactful digital solutions.' />
+        <Flex className="py-10 px-2 lg:flex-row flex-col justify-center items-center gap-10">
+          <CounterBox icon={<ImHtmlFive2 />} number='12' label='Html' />
+          <CounterBox icon={<TbBrandJavascript />} number='5' label='Javascript' />
+          <CounterBox icon={<FaReact />} number='4' label='React' />
+        </Flex>
+      </Container>
     </section>
   );
 };
