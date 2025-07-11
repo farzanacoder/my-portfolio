@@ -10,28 +10,28 @@ const Footer = () => {
   return (
     <div className="bg-black text-white font-poppins">
       <footer className="text-center pt-10 pb-6">
-            <a href="index.html" target="_blank" rel="noopener noreferrer" className="text-2xl font-bold italic" >Farjana</a>
+            <a href="index.html" target="_blank" rel="noopener noreferrer" className="text-2xl font-bold italic hover:text-gold duration-500" >Farjana</a>
         <Flex className=" justify-center gap-6 my-8">
           <Link state={{scrollTo:'about'}}>
-                  <List className='hover:text-paralight duration-500' text='About' />
+                  <List className='hover:text-gold duration-500' text='About' />
                 </Link>
                 <Link state={{scrollTo:'skills'}}>
-                  <List className='hover:text-paralight duration-500' text='Skills' />
+                  <List className='hover:text-gold duration-500' text='Skills' />
                 </Link>
                 <Link state={{scrollTo:'services'}}>
-                  <List className='hover:text-paralight duration-500' text='Services' />
+                  <List className='hover:text-gold duration-500' text='Services' />
                 </Link>
                 <Link state={{scrollTo:'project'}}>
-                  <List className='hover:text-paralight duration-300' text='Project' />
+                  <List className='hover:text-gold duration-300' text='Project' />
                 </Link>
         </Flex>
         <Flex className="pb-10 justify-center gap-6 mb-4">
-          <a href="https://github.com/farzanacoder"><FaGithub className='text-2xl hover:text-paralight duration-500' /></a>
-          <a href="https://www.linkedin.com/in/farzana-islam-b5a478339/"><FaLinkedin className='text-2xl hover:text-paralight duration-500' /></a>
-          <a href="https://www.facebook.com/farzana.coder"><SiFacebook className='text-2xl hover:text-paralight duration-500' /></a>
-          <a href="https://wa.me/8801869214651"><IoLogoWhatsapp className='text-2xl hover:text-paralight duration-500' /></a>
+          <a href="https://github.com/farzanacoder"><FaGithub className='text-2xl hover:text-gold duration-500' /></a>
+          <a href="https://www.linkedin.com/in/farzana-islam-b5a478339/"><FaLinkedin className='text-2xl hover:text-gold duration-500' /></a>
+          <a href="https://www.facebook.com/farzana.coder"><SiFacebook className='text-2xl hover:text-gold duration-500' /></a>
+          <a href="https://wa.me/8801869214651"><IoLogoWhatsapp className='text-2xl hover:text-gold duration-500' /></a>
         </Flex>
-        <p className="lg:text-lg text-sm">© <a href="" className='underline hover:text-paralight duration-500'>farzanacoder</a>. All rights reserved</p>
+        <p className="lg:text-lg text-sm">© <a href="https://farzanacoder.vercel.app/" className='underline hover:text-gold duration-500'>farzanacoder</a>. All rights reserved</p>
       </footer>
     </div>
   );

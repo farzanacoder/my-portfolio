@@ -23,7 +23,7 @@ export default function ContactMe() {
         <Flex className='lg:justify-evenly flex-col-reverse lg:flex-row mx-7'>
 
           <div className="space-y-6 lg:mt-0 mt-20">
-            <Msgbox title='Email' mailTxt='user@gmail.com' Icon={MdMarkEmailUnread} link={'farzanaashif10@gmail.com'}/>
+            <Msgbox title='Email' mailTxt='farzanaashif10@gmail.com' Icon={MdMarkEmailUnread} link={'mailto:farzanaashif10@gmail.com'}/>
             <Msgbox title='WhatsApp' mailTxt='+8801869214651' Icon={IoLogoWhatsapp} link={'https://wa.me/8801869214651'}/>
             <Msgbox title='Messenger' mailTxt='farzana.coder' Icon={FaFacebookMessenger} link={"https://www.messenger.com/t/28187013384247189/"}/>
           </div>

@@ -5,7 +5,7 @@ import { GoArrowRight } from 'react-icons/go'
 
 const ProjectCard = ({ image, title, category, link }) => {
     return (
-        <Flex className='w-[320px] flex-col gap-x-5 items-center bg-white py-5 rounded-2xl relative group/item'>
+        <Flex className='lg:w-[320px] flex-col gap-x-5 items-center bg-white py-5 rounded-2xl relative group/item'>
             <Flex className='w-[300px] h-52 bg-light justify-center items-center rounded-2xl'>
                 <div className='w-[300px] mx-auto h-52 bg-light rounded-2xl p-4'>
                     <Image className='w-full h-full rounded-2xl shadow-2xl' src={image} />

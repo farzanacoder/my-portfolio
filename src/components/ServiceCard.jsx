@@ -23,7 +23,7 @@ const ServiceCard = ({title,image, text}) => {
                 </Flex>
             </div>
 
-            <div className='absolute group/boxicn w-[40px] h-[40px] bg-[#2f354280]  duration-500 hover:bg-[#04050780] flex justify-center items-center rounded-full bottom-5 right-5 z-10'>
+            <div className='absolute group/boxicn w-[40px] h-[40px] bg-[#2f354280]  duration-500 hover:bg-[#04050780] flex justify-center items-center rounded-full bottom-5 right-5'>
                 <HiPlusSm className='text-white text-2xl group-hover/boxicn:rotate-[360deg] group-hover/boxicn:duration-500'/>
             </div>
             <div className='absolute group/boxicn w-[40px] h-[40px] bg-[#2f354280]  duration-500 hover:bg-[#04050780] flex justify-center items-center rounded-full bottom-5 right-5 -z-10 group-hover/box:bottom-[75px] group-hover/box:z-10 group-hover/box:duration-500'>

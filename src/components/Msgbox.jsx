@@ -4,7 +4,7 @@ import Flex from './Flex'
 
 const Msgbox = ({ title, mailTxt, Icon, link }) => {
     return (
-        <div className="bg-white px-20 py-4 rounded-3xl shadow-xl text-center">
+        <div className="bg-white w-[280px] -mx-2 py-4 rounded-3xl shadow-xl text-center cursor-pointer">
             {Icon && <Icon className="mx-auto mb-3 text-3xl" />}
             <h4 className="text-lg font-semibold">{title}</h4>
             <p className="text-sm text-paralight mb-2">{mailTxt}</p>

@@ -38,10 +38,10 @@ const Navber = () => {
 
     <>
       {/* mobile menu here */}
-      <header className=' top-0 left-0 lg:w-full  shadow z-10'>
+      <header className=' w-full  shadow z-10'>
         <nav className='relative h-full bg-light sm:hidden md:hidden lg:hidden py-4 pb-10'>
           <Flex className='px-4 justify-between items-center '>
-            <a href="" target="_blank" rel="noopener noreferrer" className="text-2xl font-bold text-black italic" >Farjana</a>
+            <a href="" target="_blank" rel="noopener noreferrer" className="text-2xl font-bold text-black italic" >Farzana</a>
             <div onClick={handleClick} className="cursor-pointer">
               {
                 click ? <RxCross2 /> : <HiOutlineBars3 />
@@ -104,11 +104,11 @@ const Navber = () => {
 
       {/* desktop menu here */}
 
-      <nav className=' z-10 w-full shadow  hidden xl:block lg:block md:block sm:block bg-light pt-10 '>
+      <nav className='fixed z-10 w-full shadow  hidden xl:block lg:block md:block sm:block bg-light py-6 '>
         <Container>
           <Flex>
             <div className='w-5/12'>
-              <a href="/" target="_blank" rel="noopener noreferrer" className="text-2xl font-bold text-black italic" >Farjana</a>
+              <a href="/" target="_blank" rel="noopener noreferrer" className="text-2xl font-bold text-black italic hover:text-gold duration-500" >Farzana</a>
             </div>
             <div className='w-7/12'>
               <Flex className='gap-x-8 xl:gap-x-10 items-center'>
